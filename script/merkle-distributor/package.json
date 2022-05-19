@@ -20,13 +20,14 @@
     "prettier": "^2.0.5",
     "rimraf": "^3.0.0",
     "solc": "0.6.11",
-    "ts-node": "^8.5.4",
+    "ts-node": "^10.7.0",
     "typescript": "^3.7.3"
   },
   "scripts": {
     "generate-merkle-root": "ts-node scripts/generate-merkle-root.ts",
     "generate-merkle-root:example": "ts-node scripts/generate-merkle-root.ts --input scripts/complex_example.json",
-    "prepublishOnly": "yarn test"
+    "prepublishOnly": "yarn test",
+    "start": "npx ts-node scripts/generate-merkle-root.ts --input"
   },
   "dependencies": {
     "@polkadot/api": "^6.7.2",
